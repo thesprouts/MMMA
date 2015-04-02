@@ -1,132 +1,131 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-
-		<title>sprout || MMMA</title>
-
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
-
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<!--[if lt IE 9]>
+<head>
+    <meta charset="utf-8">
+    <title>sprout || MMMA</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+</head>
 
-	<body>
+<body>
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h3>Making Machines Make Art</h3>
+                <hr>
+                <h4>Summer 2015 at the Atrium School</h4>
+                <small>with Shaunalynn & Alec of <a href="thesprouts.org">sprout & co.</a></small>
+                <hr> email: <a href="mailto:us@thesprouts.org">us@thesprouts.org</a> | phone: <a>617.955.9436</a>
+            </section>
+            <section>
+                <h2>Who are we?</h2>
+            </section>
+            <section>
+                <img height=310 src="https://scontent.xx.fbcdn.net/hphotos-xpa1/t31.0-8/615174_430571940423812_2664092001728418260_o.jpg">
+                <br>
+                <img height=310 src="https://farm5.staticflickr.com/4085/5069576867_a4032c9a1f.jpg">
+            </section>
+            <section>
+                <img height=310 src="http://www.stocksy.co.uk/images/langster/langster3.jpg">
+                <img height=310 src="https://i.vimeocdn.com/video/143377158_640.jpg">
+            </section>
+            <section>
+                <h3>What are we going to do <br> in this workshop?</h3>
+            </section>
+            <section>
+                <img src="http://www.housingaforest.com/wp-content/uploads/2013/05/DIY-Spin-Art-Machine-1.jpg">
+            </section>
+            <section>
+                <img src="http://rasterweb.net/raster/wp-content/uploads/2012/04/arcomatic003m-500x349.jpg">
+            </section>
+            <section>
+                <img src="http://static.dezeen.com/uploads/2012/12/dezeen_Drawing-Machine-by-All-Lovely-Stuff_ss_2.jpg">
+            </section>
+            <section>
+                <img src="http://aaeart.weebly.com/uploads/1/4/1/1/14115220/7005935_orig.jpg?211">
+            </section>
+            <section>
+                <h2>Tessel</h2>
+                <img height=500 src="http://cdn.instructables.com/FIZ/CYPD/HZ5DSIFD/FIZCYPDHZ5DSIFD.LARGE.jpg">
+            </section>
+            <section>
+                <h2>Scratch</h2>
+                <img height=500 src="http://zippy.gfycat.com/WelldocumentedExhaustedJerboa.gif">
+            </section>
+            <section>
+                <h4>What are we going to do today?</h4>
+                <img height=280 src="http://giant.gfycat.com/TornRepulsiveConch.gif">
+                <img height=280 src="http://fat.gfycat.com/FavoriteGiddyChickadee.gif">
+                <img height=280 src="http://zippy.gfycat.com/GoldenAbsoluteFrogmouth.gif">
+                <img height=280 src="http://fat.gfycat.com/GentleWholeAuklet.gif">
+            </section>
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-		<div class="reveal">
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h3>Making Machines Make Art</h3>
-					<hr>
-					<p>with Shaunalynn & Alec</p>
-				</section>
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function() {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function() {
+                return !!document.querySelector('pre code');
+            },
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }]
+    });
+    </script>
+</body>
 
-				<section>
-				<h2>Who are we?</h2>
-				</section>
-
-				<section>
-					<img height=310 src="https://scontent.xx.fbcdn.net/hphotos-xpa1/t31.0-8/615174_430571940423812_2664092001728418260_o.jpg">
-					<br>
-					<img height=310 src="https://farm5.staticflickr.com/4085/5069576867_a4032c9a1f.jpg">
-				</section>
-				
-				<section>
-					<img height=310 src="http://www.stocksy.co.uk/images/langster/langster3.jpg">
-					<img height=310 src="https://i.vimeocdn.com/video/143377158_640.jpg">
-				</section>
-
-				<section>
-					<h3>What are we going to do <br> in this workshop?</h3>
-				</section>	
-
-				<section>
-				<img src="http://www.housingaforest.com/wp-content/uploads/2013/05/DIY-Spin-Art-Machine-1.jpg">
-				</section>
-
-				<section>
-				<img src="http://rasterweb.net/raster/wp-content/uploads/2012/04/arcomatic003m-500x349.jpg">
-				</section>
-
-				<section>
-				<img src="http://static.dezeen.com/uploads/2012/12/dezeen_Drawing-Machine-by-All-Lovely-Stuff_ss_2.jpg">
-				</section>
-
-				<section>
-				<img src="http://aaeart.weebly.com/uploads/1/4/1/1/14115220/7005935_orig.jpg?211">
-				</section>	
-
-				<section>
-					<h2>Tessel</h2>
-					<img height=500 src="http://cdn.instructables.com/FIZ/CYPD/HZ5DSIFD/FIZCYPDHZ5DSIFD.LARGE.jpg">
-				</section>
-
-				<section>
-					<h2>Scratch</h2>
-					<img height=500 src="http://zippy.gfycat.com/WelldocumentedExhaustedJerboa.gif">
-				</section>		
-
-				<section>
-					<h4>What are we going to do today?</h4>
-					<img height=280 src="http://giant.gfycat.com/TornRepulsiveConch.gif">
-					<img height=280 src="http://fat.gfycat.com/FavoriteGiddyChickadee.gif">
-					<img height=280 src="http://zippy.gfycat.com/GoldenAbsoluteFrogmouth.gif">
-					<img height=280 src="http://fat.gfycat.com/GentleWholeAuklet.gif">
-				</section>
-
-			</div>
-
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-
-		</script>
-
-	</body>
 </html>

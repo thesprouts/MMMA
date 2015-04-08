@@ -1,131 +1,68 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <title>sprout || MMMA</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
-    <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
-    <!-- Printing and PDF exports -->
-    <script>
-    var link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-    document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
-    <!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+    <link rel="stylesheet" type="text/css" href="./decks/css/theme/sky.css">
+
+	<style>
+	#container {
+	    width:55%;
+	    padding:20px 40px 10px 40px;
+	    margin:auto;
+	    background-color:rgba(255,255,255,.5);
+	}
+	#nav ul {
+		list-style-type:none;
+		position:fixed;
+		bottom:20px;
+		right:30px;
+		font-size:28px;
+	}
+	#container h3 {
+		margin:auto;
+		padding-top:45px;
+	}
+	#container p {
+		font-size:24px;
+	}
+	#container img {
+		padding:3% 0% 2% 3%;
+		width:45%;
+	}
+	#container .images {
+		background-color:rgba(0,0,0,.1);
+		border-radius:20px;
+	}
+
+	</style>
+
 </head>
 
-<body>
-    <div class="reveal">
-        <!-- Any section element inside of this container is displayed as a slide -->
-        <div class="slides">
-            <section>
-                <h3>Making Machines Make Art</h3>
-                <hr>
-                <h4>Summer 2015 at the Atrium School</h4>
-                <small>with Shaunalynn & Alec of <a href="thesprouts.org">sprout & co.</a></small>
-                <hr> email: <a href="mailto:us@thesprouts.org">us@thesprouts.org</a> | phone: <a>617.955.9436</a>
-            </section>
-            <section>
-                <h2>Who are we?</h2>
-            </section>
-            <section>
-                <img height=310 src="https://scontent.xx.fbcdn.net/hphotos-xpa1/t31.0-8/615174_430571940423812_2664092001728418260_o.jpg">
-                <br>
-                <img height=310 src="https://farm5.staticflickr.com/4085/5069576867_a4032c9a1f.jpg">
-            </section>
-            <section>
-                <img height=310 src="http://www.stocksy.co.uk/images/langster/langster3.jpg">
-                <img height=310 src="https://i.vimeocdn.com/video/143377158_640.jpg">
-            </section>
-            <section>
-                <h3>What are we going to do <br> in this workshop?</h3>
-            </section>
-            <section>
-                <img src="http://www.housingaforest.com/wp-content/uploads/2013/05/DIY-Spin-Art-Machine-1.jpg">
-            </section>
-            <section>
-                <img src="http://rasterweb.net/raster/wp-content/uploads/2012/04/arcomatic003m-500x349.jpg">
-            </section>
-            <section>
-                <img src="http://static.dezeen.com/uploads/2012/12/dezeen_Drawing-Machine-by-All-Lovely-Stuff_ss_2.jpg">
-            </section>
-            <section>
-                <img src="http://aaeart.weebly.com/uploads/1/4/1/1/14115220/7005935_orig.jpg?211">
-            </section>
-            <section>
-                <h2>Tessel</h2>
-                <img height=500 src="http://cdn.instructables.com/FIZ/CYPD/HZ5DSIFD/FIZCYPDHZ5DSIFD.LARGE.jpg">
-            </section>
-            <section>
-                <h2>Scratch</h2>
-                <img height=500 src="http://zippy.gfycat.com/WelldocumentedExhaustedJerboa.gif">
-            </section>
-            <section>
-                <h4>What are we going to do today?</h4>
-                <img height=280 src="http://giant.gfycat.com/TornRepulsiveConch.gif">
-                <img height=280 src="http://fat.gfycat.com/FavoriteGiddyChickadee.gif">
-                <img height=280 src="http://zippy.gfycat.com/GoldenAbsoluteFrogmouth.gif">
-                <img height=280 src="http://fat.gfycat.com/GentleWholeAuklet.gif">
-            </section>
-        </div>
+<body class="reveal">
+
+    <div id="nav">
+	<ul>
+	<li><h4><a href="./decks/about.html">general info</a></h4></li>
+	<li><h4>week 1</h4></li>
+	<li><h4>week 2</h4></li>
+	<li><h4>contact</h4></li>
+	</ul>
+	</div>
+
+	<div id="container">
+    <h3>Making Machines Make Art</h3>
+    <hr>
+    <p>Join us at <a href="http://atrium.org/">The Atrium School</a> in Watertown for two, week-long investigations into art & machines.</p>
+    <div class="images"><img height=251 src="http://www.wecb-news.com/wp-content/uploads/2014/02/Paintball-Art.jpg"><img src="http://25.media.tumblr.com/tumblr_m1bk060JHs1qz5rbko1_500.jpg"></div>
+    <p>We'll spend our time making machines which draw and paint and project and splatter and spin - and then making art with those machines.  Some will be simple (e.g. slingshots and water balloons full of paint) and some will be complex (e.g. designing linkages that let you draw complex shapes with simple motions).   We'll be writing code and building mechanisms and robots to make more complex drawing and painting possible.</p>  
+    <div class="images"><img style="height:236px;" src="https://ksr-ugc.imgix.net/projects/14660/photo-original.jpg?v=1397759602&w=1536&h=1152&fit=crop&auto=format&q=92&s=ac13558bf6124a01983fbde6d65a9570"><img src="http://www.patriciogonzalezvivo.com/2014/vPlotter/images/hektor.jpg"></div>
+    <p>At the end of each week, you'll end up with a collection of art from which we'll help you frame and finish your best pieces.  Throughout the week, we'll also be working together on a larger scale, spray painting machine which will allow you to create large, spray-paint murals based on drawings or photographs you feed to the machine.</p>
+    <h3>Registering for the class</h3>
+    <div class="images"><img height=243 src="http://static.dezeen.com/uploads/2012/12/dezeen_Drawing-Machine-by-All-Lovely-Stuff_ss_2.jpg"><img src="http://www.artdesignwhatever.com/wp-content/uploads/2010/07/Bumpbots.jpg"></div>
+    <h3>For more information</h3>
+    <p>If you have any questions about this program, you can get in touch with Alec & Shaunalynn from <a href="http://thesprouts.org">sprout & co</a> at <a href="mailto:us@thesprouts.org">us@thesprouts.org</a> or <a>617.955.9436</a></p>
+    <div class="images"><img src="http://concretewheels.com/drawingmachines/wddm001.jpg"><img height=480 src="http://www.estherschipper.com/sites/default/files/ab/DRAWING_MACHINES/2011_AB_DrawingMachine_English_NEW-2.jpg"></div>
     </div>
-    <script src="lib/js/head.min.js"></script>
-    <script src="js/reveal.js"></script>
-    <script>
-    // Full list of configuration options available at:
-    // https://github.com/hakimel/reveal.js#configuration
-    Reveal.initialize({
-        controls: true,
-        progress: true,
-        history: true,
-        center: true,
-
-        transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-        // Optional reveal.js plugins
-        dependencies: [{
-            src: 'lib/js/classList.js',
-            condition: function() {
-                return !document.body.classList;
-            }
-        }, {
-            src: 'plugin/markdown/marked.js',
-            condition: function() {
-                return !!document.querySelector('[data-markdown]');
-            }
-        }, {
-            src: 'plugin/markdown/markdown.js',
-            condition: function() {
-                return !!document.querySelector('[data-markdown]');
-            }
-        }, {
-            src: 'plugin/highlight/highlight.js',
-            async: true,
-            condition: function() {
-                return !!document.querySelector('pre code');
-            },
-            callback: function() {
-                hljs.initHighlightingOnLoad();
-            }
-        }, {
-            src: 'plugin/zoom-js/zoom.js',
-            async: true
-        }, {
-            src: 'plugin/notes/notes.js',
-            async: true
-        }]
-    });
-    </script>
 </body>
 
 </html>
